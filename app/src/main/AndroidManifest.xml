@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SecondProject_2"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".AiGameActivity"
+            android:label="사람 선공 게임 액티비티"
+            />
+        <activity
+            android:name=".HardAiGameActivity"
+            android:label="AI 선공 게임 액티비티"
+            />
+        <activity
+            android:name=".TwoPersonGameActivity"
+            android:label="2인 게임 액티비티"
+            />
+        <activity
+            android:name=".InputNameActivity"
+            android:label="2인 게임을 위한 이름 입력 액티비티"
+            />
+        <activity
+            android:name=".RoundSelectActivity"
+            android:label="3판 2선승, 5판 3선승을 정하는 액티비티"
+            />
+        <activity
+            android:name=".WinnerActivity"
+            android:label="조건에 맞는 승자를 띄워주는 액티비티"
+            />
+        <activity
+            android:name=".GameRulesActivity"
+            android:label="틱텍토 게임 플레이 방법을 소개하는 액티비티"
+            />
+
+    </application>
+</manifest>
